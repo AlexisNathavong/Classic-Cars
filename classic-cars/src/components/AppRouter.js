@@ -7,6 +7,8 @@ import HomePage from './HomePage';
 import SignUp from './Navigation/SignUp';
 import SignIn from './Navigation/SignIn';
 import SignOut from './Navigation/SignOut';
+import AboutPage from './AboutPage';
+import DashBoardPage from './DashBoardPage';
 
 const AppRouter = () => {
 
@@ -17,6 +19,8 @@ const AppRouter = () => {
                 <Link to='/sign-up'>SignUp</Link>
                 <Link to='/sign-in'>SignIn</Link>
                 <Link to='/sign-out'>SignOut</Link>
+                <Link to='/about-page'>About</Link>
+                <Link to='/dashboard'>DashBoard</Link>
 
             </div> 
 
@@ -25,6 +29,8 @@ const AppRouter = () => {
                 <Route path='/sign-up' component={SignUp} />
                 <Route path='/sign-in' component={SignIn} />
                 <Route path='sign-out' component={SignOut} />
+                <Route path='/about-page' component={AboutPage} />
+                <Route path='/dashboard' component={DashBoardPage} />
 
             </Switch>
         </Router>

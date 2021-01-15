@@ -4,8 +4,14 @@ function AboutPage() {
   return (
     <>
       <div className='about-page'>
-        <h1>Classic Cars</h1>
-        <h2>About Us</h2>
+        <header className='about-header'>
+          {/* use a hero image with a call to action button to SIGNUP */}
+          <h1>Classic Cars</h1>
+          <h2>
+            When it comes to a car you love, you'll know it when you see it
+          </h2>
+          <button>Sign Up</button>
+        </header>
         <div className='about-site'>
           <h2>Why Classic Cars?</h2>
           <p>

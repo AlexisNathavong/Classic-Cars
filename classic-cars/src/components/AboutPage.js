@@ -1,6 +1,6 @@
 import React from 'react';
 
-function AboutPage() {
+const AboutPage = () => {
   return (
     <>
       <div className='about-page'>
@@ -36,6 +36,6 @@ function AboutPage() {
       </div>
     </>
   );
-}
+};
 
 export default AboutPage;

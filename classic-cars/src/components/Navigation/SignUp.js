@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState, useReducer } from 'react';
+import { reducer, initialState } from '../../reducers/SignUpReducer';
+import axios from 'axios';
 
 const SignUp = () => {
 
@@ -32,9 +34,69 @@ const SignUp = () => {
     console.log(state);
 
     return (
-        <div className='sign-up'>
-            
-        </div>
+        <form>
+
+            <div className='sign-up-form'>
+                <label>First Name:</label>
+                <input
+                    className='sign-up-form'
+                    type='text'
+                    name='first_name'
+                    placeholder='first name'
+                    value={user.first_name} required
+                    onChange={handleChanges}
+                />
+            </div>
+
+            <div className='sign-up-form'>
+                <label>Last Name:</label>
+                <input
+                    className='sign-up-form'
+                    type='text'
+                    name='last_name'
+                    placeholder='last name'
+                    value={user.last_name} required
+                    onChange={handleChanges}
+                />
+            </div>
+
+            <div className='sign-up-form'>
+                <label>Email:</label>
+                <input
+                    className='sign-up-form'
+                    type='text'
+                    name='email'
+                    placeholder='email'
+                    value={user.email} required
+                    onChange={handleChanges}
+                />
+            </div>
+
+            <div className='sign-up-form'>
+                <label>Password:</label>
+                <input
+                    className='sign-up-form'
+                    type='password'
+                    name='password'
+                    placeholder='password'
+                    value={user.password} required
+                    onChange={handleChanges}
+                />
+            </div>
+
+            <div className='sign-up-form'>
+                <label>Re-Enter Password</label>
+                <input
+                    className='sign-up-form'
+                    type='password'
+                    name='confirm_password'
+                    placeholder='re-enter password'
+                    value={user.confirm_password} required
+                    onChange={handleChanges}
+                />
+            </div>
+                <button onClick={signup}>Submit</button>
+        </form>
     )
 
 }

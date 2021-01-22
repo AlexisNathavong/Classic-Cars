@@ -15,7 +15,7 @@ const SignIn = () => {
     const signin = e => {
         e.preventDefault();
 
-        axios.post('', user)
+        axios.post('http://localhost:3000', user)
 
             .then(res => {
                 console.log('SignIn check', res)

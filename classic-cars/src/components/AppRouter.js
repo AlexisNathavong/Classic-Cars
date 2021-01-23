@@ -28,7 +28,7 @@ const AppRouter = () => {
                 <Route exact path='/' component={HomePage} />
                 <Route path='/sign-up' component={SignUp} />
                 <Route path='/sign-in' component={SignIn} />
-                <Route path='sign-out' component={SignOut} />
+                <Route path='/sign-out' component={SignOut} />
                 <Route path='/about-page' component={AboutPage} />
                 <Route path='/dashboard' component={DashBoardPage} />
 

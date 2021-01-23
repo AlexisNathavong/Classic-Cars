@@ -9,6 +9,7 @@ import SignIn from './Navigation/SignIn';
 import SignOut from './Navigation/SignOut';
 import AboutPage from './AboutPage';
 import DashBoardPage from './DashBoardPage';
+import PrivateRoute from './PrivateRoute';
 
 const AppRouter = () => {
 
@@ -30,7 +31,7 @@ const AppRouter = () => {
                 <Route path='/sign-in' component={SignIn} />
                 <Route path='/sign-out' component={SignOut} />
                 <Route path='/about-page' component={AboutPage} />
-                <Route path='/dashboard' component={DashBoardPage} />
+                <PrivateRoute path='/dashboard' component={DashBoardPage} />
 
             </Switch>
         </Router>
